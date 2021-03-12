@@ -1,0 +1,8 @@
+html{
+    background-image: url(/logos/vector/isolated-monochrome-black.svg);
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+footer{
+    position: relative;
+}

@@ -1,0 +1,73 @@
+html{
+  background-color: white;
+}
+h1{
+  background-color: #00acff;
+  border: 4px double black; /* ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð³Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ */
+}
+.regform {
+ margin: 0;
+  padding: 20px 100;
+  color: #000000;
+  text-align: center;
+}
+.logo{
+  position	: relative;
+  width		: 70%; 
+}
+h1{
+   padding: 20px 100;
+   text-align:center;
+   text-shadow: 4px 4px 4px rgb(255 31 31 / 30%);
+
+}
+h2{
+   padding: 20px 100;
+   text-align:center;
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+h4{
+  padding: 20px 100;
+   text-align:end;
+   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+img[src='/logos/cover-cut.png']
+{
+  display:-webkit-inline-box;
+  position	:relative;
+  width: 25%;
+}
+input[type="submit"]{
+  padding: 10px 10;
+  border: 1px solid #1010107a;
+  border-radius: 10px;
+  font-family: cursive
+}
+input[type="submit"]:visited {
+    color: #800080;
+   } 
+input[type="submit"]:hover {
+  background: -webkit-linear-gradient(#eee, #00acff);
+  -webkit-text-fill-color: #000000fc;
+  border: 1px solid #00acff;
+}
+.error{
+  background-color: #ff0000;
+  border-radius: 200px;
+}
+.usersbut{
+  text-align:right;
+  display:inline-flex;
+  background-color: #00acff;
+  width: auto;
+  position: relative;
+  margin-right: 10px;
+  float: right;
+}
+.logoblock{
+  display:-webkit-inline-box;
+  border-radius: 10px;
+  width:-webkit-fill-available;
+  border: 10px double #00acff;
+  background-color: #00acff;
+}
