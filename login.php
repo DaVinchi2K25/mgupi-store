@@ -17,7 +17,6 @@
   function check_user($login,$password_hash)
   {
     require_once 'register/connection.php'; //подключаем скрипт
- 
   // подключаемся к серверу
   $link = mysqli_connect($host, $user, $password, $database) 
     or die("Ошибка" . mysqli_connect_error($link));

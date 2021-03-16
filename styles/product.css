@@ -1,0 +1,17 @@
+.product{
+  width: 60%;
+  display:inline-grid;
+  display:-webkit-inline-box;
+}
+.product_picture{
+}
+.product_name{
+  text-align:start;
+  text-shadow: 2px 4px 3px rgb(0 0 0 / 30%);
+  font-size: 50px;
+}
+.product_price{
+  text-shadow: 2px 4px 3px rgb(0 0 0 / 30%);
+  font-size: 50px;
+  text-align:right;
+}
