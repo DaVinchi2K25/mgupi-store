@@ -18,7 +18,7 @@
   </form>
   </div>
   </div>
-  
+  <div class="main">
     <?php 
   echo "<div class='category_rows'>";
   require_once 'register/connection.php'; //подключаем скрипт
@@ -31,7 +31,7 @@
           <form action='/?category_id=$obj->id'><input type='submit' value='$obj->name'></form>
           </div>";
   }
-  echo "</div>";
+  echo "</div>"; 
   mysqli_close($link);
 ?>
 <div class="product_rows">
@@ -44,7 +44,7 @@
           <b>$obj->name</b>
           </div>
           <div class='product_img'>
-          <img src=$obj->picture>
+          <img src=$obj->picture width='200' height='222'>
           </div>
           <div class='product_price'>
           <h4>$obj->price руб.</h4>
@@ -70,6 +70,7 @@
   }
   echo"</div>";
     ?>
+</div>
 </div>
 </body>
 <footer>

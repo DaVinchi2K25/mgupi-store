@@ -83,20 +83,34 @@ input[type="submit"]:hover {
   border: 10px double #00acff;
   background-color: #00acff;
 }
-.product{
-  width: 60%;
-  display:inline-grid;
+.product_rows{
   display:-webkit-inline-box;
 }
-.product_picture{
-}
+.product_row{
+  position: relative;
+  border: 10px solid #c9c9c961;
+  border-shadow:solid 10px #0c78d6
+  widthpx;
+  height: 360px;
+  background: #ffffff;
+  }
 .product_name{
   text-align:start;
   text-shadow: 2px 4px 3px rgb(0 0 0 / 30%);
-  font-size: 50px;
+  font-size: 30px;
 }
 .product_price{
-  text-shadow: 2px 4px 3px rgb(0 0 0 / 30%);
-  font-size: 50px;
-  text-align:right;
+  text-shadow: 2px 4px 3px rgb(0 100 255 / 30%);
+  font-size: 20px;
+  text-align:left;
+}
+.category_rows{
+  position: relative;
+  border: 10px solid #0030ff
+  border-shadow:solid 10px #0088ff;
+  width:auto;
+  height: auto;
+}
+.main{
+  display:-webkit-inline-box;
 }
