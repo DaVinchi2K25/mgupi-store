@@ -53,7 +53,6 @@
           <div class='product_price'>
           <h4>$obj->price руб.</h4>
           </div>
-          <form action='/product.php'><input type='submit' value='Подробнее'></form>
           </div>";
   }
   }
