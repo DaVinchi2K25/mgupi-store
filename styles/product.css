@@ -1,9 +1,45 @@
-.product{
-  width: 60%;
-  display:inline-grid;
+html{
+  background-color: white;
+}
+h1{
+  background-color: #00acff;
+  border: 4px double black; 
+}
+.regform {
+  margin: auto;
+  padding: 20px 100;
+  color: #000000;
+  text-align: center;
+  background-color:#00acff;
+}
+.logo{
+  position  : relative;
+  width   : 70%; 
+}
+img[src='/logos/cover-cut.png']
+{
   display:-webkit-inline-box;
+  position  :relative;
+  width: 25%;
+}
+input[type="submit"]{
+  padding: 10px 10;
+  border: 1px solid #1010107a;
+  border-radius: 10px;
+  font-family: cursive
+}
+input[type="submit"]:visited {
+    color: #800080;
+   } 
+input[type="submit"]:hover {
+  background: -webkit-linear-gradient(#eee, #00acff);
+  -webkit-text-fill-color: #000000fc;
+  border: 1px solid #00acff;
+}
+.product{ 
 }
 .product_picture{
+ display:inline-flex;
 }
 .product_name{
   text-align:start;
@@ -14,4 +50,24 @@
   text-shadow: 2px 4px 3px rgb(0 0 0 / 30%);
   font-size: 50px;
   text-align:right;
+  margin
+}
+.logoblock{
+  display:-webkit-inline-box;
+  border-radius: 10px;
+  width:-webkit-fill-available;
+  border: 10px double #00acff;
+  background-color: #00acff;
+}
+.product_text{
+  width:600px;
+}
+.usersbut{
+  text-align:right;
+  display:inline-flex;
+  background-color: #00acff;
+  width: auto;
+  position: relative;
+  margin-right: 10px;
+  float: right;
 }

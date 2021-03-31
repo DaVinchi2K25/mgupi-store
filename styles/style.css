@@ -85,19 +85,20 @@ input[type="submit"]:hover {
 }
 .product_rows{
   display:-webkit-inline-box;
+  flex-wrap:wrap;
 }
 .product_row{
   position: relative;
   border: 10px solid #c9c9c961;
   border-shadow:solid 10px #0c78d6
-  widthpx;
   height: 360px;
   background: #ffffff;
   }
 .product_name{
   text-align:start;
   text-shadow: 2px 4px 3px rgb(0 0 0 / 30%);
-  font-size: 30px;
+  font-size: 29px;
+  width:200px
 }
 .product_price{
   text-shadow: 2px 4px 3px rgb(0 100 255 / 30%);
@@ -112,5 +113,8 @@ input[type="submit"]:hover {
   height: auto;
 }
 .main{
-  display:-webkit-inline-box;
+  display:inline-flex;
+}
+input[type="id"]{
+  display:none;
 }

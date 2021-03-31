@@ -28,7 +28,9 @@
   $result = mysqli_query($link, $query) or die(mysqli_error($link)); 
   while ($obj = mysqli_fetch_object($result)){
     echo "<div class='category_row'>
-          <form action='/?category_id=$obj->id'><input type='submit' value='$obj->name'></form>
+          <form action='/index.php' method='POST'>
+          <input type='id' value='$obj->id' name='category_id' display:none>
+          <input type='submit' value='$obj->name'></form>
           </div>";
   }
   echo "</div>"; 
@@ -39,9 +41,9 @@
   require_once 'register/connection.php';
   function showProducts($result){
     while ($obj = mysqli_fetch_object($result)){
-    echo "<div class='product_row'>
+    echo "<div class='product_row' >
           <div class='product_name'>
-          <b>$obj->name</b>
+          <a href='/product.php?id=$obj->id'>$obj->name</a>
           </div>
           <div class='product_img'>
           <img src=$obj->picture width='200' height='222'>
@@ -49,7 +51,7 @@
           <div class='product_price'>
           <h4>$obj->price руб.</h4>
           </div>
-          <form action='/product.php?id=$obj->id'><input type='submit' value='Подробнее'></form>
+          <form action='/product.php'><input type='submit' value='Подробнее'></form>
           </div>";
   }
   }
