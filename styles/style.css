@@ -118,3 +118,15 @@ input[type="submit"]:hover {
 input[type="id"]{
   display:none;
 }
+.cart_block{
+  text-align:right;
+  display:inline-grid;
+  background-color: #00acff;
+  width: auto;
+  position: relative;
+  margin-right: 10px;
+  float: right;
+}
+.logout{
+  color:azure;
+}

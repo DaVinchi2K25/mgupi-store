@@ -26,6 +26,8 @@
   if($result)
   {
   	if (password_verify($password_hash,$result))  {
+      session_start(); 
+      $_SESSION['login']=$login;
       header("Location: /login.php?msg=вход выполнен&status=success");
   	} else {
      header("Location: /login.php?msg=пароль введён неверно");
