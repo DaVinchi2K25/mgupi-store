@@ -26,8 +26,7 @@
   if($result)
   {
   	if (password_verify($password_hash,$result))  {
-      header("Location: /login.php?msg=вход выполнен");
-      echo '<script>setTimeout(\'location="/"\', 5000)</script>';
+      header("Location: /login.php?msg=вход выполнен&status=success");
   	} else {
      header("Location: /login.php?msg=пароль введён неверно");
     }
@@ -47,10 +46,14 @@ if(!empty($_POST)){
  }
 }
 
+
 ?> 
  </div>
  <form action="login.php" method="POST">
- <p><?php if(!empty($_GET)){ echo $_GET['msg'];} else { echo "<b>Введите логин и пароль для входа</b>";}?></p>
+ <p><?php if(!empty($_GET) && $_GET['status']=='success'){ echo $_GET['msg']; echo '<script>setTimeout(\'location="/"\', 1000)</script>';} else{
+  if(empty($_GET)) { echo "<b>Введите логин и пароль для входа</b>";}else{
+    echo $_GET['msg'];
+  }}?></p>
   <p>Логин<br><input type="email" name="login" required></p>
   <p>Пароль<br><input type="password" name="password" required></p>
   <p><input type="submit"></p>
