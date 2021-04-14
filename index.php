@@ -46,12 +46,13 @@
           <a href='/product.php?id=$obj->id'>$obj->name</a>
           </div>
           <div class='product_img'>
-          <img src=$obj->picture width='200' height='222'>
+          <a href='/product.php?id=$obj->id'>
+          <img src=$obj->picture alt='' width='200' height='222'>
+          </a>
           </div>
           <div class='product_price'>
           <h4>$obj->price руб.</h4>
           </div>
-          <form action='/product.php'><input type='submit' value='Подробнее'></form>
           </div>";
   }
   }
