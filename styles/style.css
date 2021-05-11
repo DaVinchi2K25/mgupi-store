@@ -130,3 +130,11 @@ input[type="id"]{
 .logout{
   color:azure;
 }
+.sub_category_rows{
+  text-align:center;
+  display:-webkit-inline-box;
+  position:relative;
+}
+.center{
+  display:inline-grid;
+}
