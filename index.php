@@ -10,10 +10,17 @@
     </head>
     <body>
   <div class="logoblock">
+<<<<<<< HEAD
   <a href="/"><img class="logomain" src="/logos/cover-cut.png"></a>
    <?php 
    if(empty($_SESSION['login'])){
   echo '<div class="usersbut">
+=======
+  <a href='/index.php?id=$obj->id'>
+  <img class="logomain" src="/logos/cover-cut.png">
+  </a>
+   <div class="usersbut">
+>>>>>>> 4b7e761 (123)
     <form class="btn" action="login.php" type="get">
     <p><input type="submit" value="Войти"></p>
     </form>
